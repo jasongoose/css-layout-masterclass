@@ -1,6 +1,6 @@
 @mixin tag($text-color, $border-color) {
-  color: $text-color;
-  border: 1px solid rgba($border-color, 0.5);
+  //color: $text-color;
+  //border: 1px solid rgba($border-color, 0.5);
   padding: 10px;
   border-radius: 20px;
   white-space: nowrap;
@@ -9,8 +9,11 @@
 #app {
   height: 100%;
   box-sizing: border-box;
-  background-color: black;
+  //background-color: black;
   padding: 50px 10px;
+  * {
+    border: 1px solid rgba(black, 0.2);
+  }
 }
 
 .header {
@@ -23,8 +26,8 @@
     &-item {
       @include tag(white, #fff);
       &--inverted {
-        background-color: white;
-        color: black;
+        //background-color: white;
+        //color: black;
       }
     }
   }
@@ -36,8 +39,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     &__card {
-      color: black;
-      background-color: white;
+      //color: black;
+      //background-color: white;
       padding: 20px 10px;
       border-radius: 15px;
       border: none;
@@ -46,24 +49,24 @@
       justify-content: space-between;
       gap: 40px;
       &:first-child {
-        background-color: #292d33;
-        color: white;
-        border: 1px solid white;
+        //background-color: #292d33;
+        //color: white;
+        //border: 1px solid white;
       }
       &:nth-child(2) {
-        background-color: #f5f4ef;
+        //background-color: #f5f4ef;
       }
       &:nth-child(3) {
-        background-color: #f8fcb5;
+        //background-color: #f8fcb5;
       }
       &:nth-child(4) {
-        background-color: #b19ff6;
+        //background-color: #b19ff6;
       }
       &:nth-child(5) {
-        background-color: #fed3d3;
+        //background-color: #fed3d3;
       }
       &:nth-child(6) {
-        background-color: #d0fedf;
+        //background-color: #d0fedf;
       }
       &:nth-child(3n) {
         grid-column: span 2;
@@ -82,15 +85,15 @@
       &__price {
         @include tag(black, #000);
         &--free {
-          background-color: rgb(255, 221, 44);
+          //background-color: rgb(255, 221, 44);
         }
         &--per-month {
-          background-color: pink;
+          //background-color: pink;
         }
       }
       &__length {
         @include tag(black, #000);
-        background-color: white;
+        //background-color: white;
       }
     }
   }
