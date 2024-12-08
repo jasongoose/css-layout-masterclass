@@ -7,10 +7,12 @@
 }
 
 #app {
+  width: 420px;
   height: 100%;
   box-sizing: border-box;
   //background-color: black;
   padding: 50px 10px;
+  margin: auto;
   * {
     border: 1px solid rgba(black, 0.2);
   }
