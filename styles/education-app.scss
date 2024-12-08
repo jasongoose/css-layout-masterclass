@@ -1,3 +1,5 @@
+@use "styles";
+
 @mixin tag($text-color, $border-color) {
   //color: $text-color;
   //border: 1px solid rgba($border-color, 0.5);
@@ -14,11 +16,11 @@
   padding: 50px 10px;
   margin: auto;
   * {
-    border: 1px solid rgba(black, 0.2);
+    outline: red solid 0.5px;
   }
 }
 
-.header {
+header {
   padding-bottom: 20px;
   overflow-x: scroll;
   &__list {
@@ -35,7 +37,7 @@
   }
 }
 
-.main {
+main {
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
