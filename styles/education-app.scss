@@ -21,17 +21,19 @@
 }
 
 header {
-  padding-bottom: 20px;
   overflow-x: scroll;
-  &__list {
-    display: flex;
-    gap: 10px;
-    width: max-content;
-    &-item {
-      @include tag(white, #fff);
-      &--inverted {
-        //background-color: white;
-        //color: black;
+  .header {
+    padding-bottom: 20px;
+    &__list {
+      display: flex;
+      gap: 10px;
+      width: max-content;
+      &-item {
+        @include tag(white, #fff);
+        &--inverted {
+          //background-color: white;
+          //color: black;
+        }
       }
     }
   }
