@@ -4,15 +4,9 @@ $border-gap: 5px;
 
 #app {
   width: 80%;
-  height: 100%;
-  box-sizing: border-box;
-  margin: auto;
   display: grid;
   grid-template-rows: 1fr 10fr;
   gap: $border-gap;
-  * {
-    outline: red solid 0.5px;
-  }
 }
 
 header {

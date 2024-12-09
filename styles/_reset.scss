@@ -46,3 +46,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* custom */
+body {
+  height: 100vh;
+  * {
+    outline: red solid 0.5px;
+  }
+}
+
+#app {
+  height: 100%;
+  box-sizing: border-box;
+  margin: auto;
+}
