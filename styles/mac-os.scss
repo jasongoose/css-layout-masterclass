@@ -1,0 +1,101 @@
+@use "styles";
+
+#app {
+  height: 100vh;
+}
+
+.grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.disk-area {
+  padding: 30px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.disk-area__row:first-child {
+  flex-grow: 1;
+}
+
+.disk-sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disk-sign__symbol {
+  width: 60%;
+  height: 60%;
+}
+
+.disk-capacity {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.disk-usage {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.disk-usage__row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.disk-usage__description {
+  font-size: 10px;
+}
+
+.disk-usage__measured {
+  font-size: 150px;
+}
+
+.grid__cell.menu {
+  grid-row: span 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 30px;
+}
+
+.memory-usage-grid {
+  grid-row: span 4;
+  display: grid;
+  grid-template-rows: 2.5fr 1fr 1.5fr 2fr 4fr;
+}
+
+.storage-occupation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 10px 0;
+}
