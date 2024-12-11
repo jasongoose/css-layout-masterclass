@@ -50,7 +50,7 @@ table {
 /* custom */
 body {
   height: 100vh;
-  * {
+  *:not(span) {
     outline: red solid 0.5px;
   }
 }
